@@ -83,7 +83,7 @@ const Donation = () => {
           </div>
           {!isLoading && (
             <div className="flex justify-between gap-10 flex-col-reverse xl:flex-row">
-              <div className="w-full flex-col xl:w-full bg-white flex p-10 rounded-2xl border border-red-500/20">
+              <div className="w-full flex-col xl:w-full dark:bg-slate-800/50 dark:border-white/10 bg-white flex p-10 rounded-2xl border border-red-500/20">
                 <div className="flex w-full flex-col sm:flex-row sm:justify-between sm:text-start">
                   <div className="flex gap-5 flex-col text-center items-center sm:text-start sm:flex-row">
                     <img
@@ -145,7 +145,7 @@ const Donation = () => {
                     {postDetails?.bloodGroupe}
                   </li>
                 </div>
-                <hr className="bg-black my-5 w-full"></hr>
+                <span className="bg-stone-200 h-[1px] w-full flex my-5 dark:bg-white/10" />
                 <ol className="list-disc">
                   <h3 className="text-[18px] font-semibold">Additional info</h3>
                   <div className="ml-10 pt-2 text-sm space-y-1">
@@ -175,7 +175,7 @@ const Donation = () => {
                     </li>
                   </div>
                 </ol>
-                <hr className="bg-black my-5 w-full"></hr>
+                <span className="bg-stone-200 h-[1px] w-full flex my-5 dark:bg-white/10" />
                 <p className="text-sm">
                   ,<strong>Message</strong> - {postDetails?.donationMsg}
                 </p>

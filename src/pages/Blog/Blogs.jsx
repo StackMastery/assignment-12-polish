@@ -35,7 +35,7 @@ const Blogs = () => {
   return (
     <>
       <section className="flex justify-center py-10 pb-0">
-        <div className="w-primary px-5 flex flex-col pb-10 pt-40 border-dashed border-b gap-8 border-b-gray-900 mb-10">
+        <div className="w-primary px-5 flex flex-col pb-10 pt-40 border-dashed border-b gap-8 dark:border-b-white/10 border-b-gray-900 mb-10">
           <h2
             data-aos="fade-up"
             className="text-4xl md:text-5xl font-medium font-2"
@@ -53,7 +53,7 @@ const Blogs = () => {
       </section>
       <section className="flex justify-center -mb-20">
         <div className="w-primary px-5 gap-5 flex flex-col-reverse xl:flex-row justify-between">
-          <div className="w-full xl:w-9/12 border-dashed flex flex-col gap-8 xl:border-r border-gray-900">
+          <div className="w-full xl:w-9/12 border-dashed flex flex-col gap-8 xl:border-r dark:border-white/10 border-gray-900">
             {allPosts?.blogs?.map((post, index) => (
               <motion.article
                 initial={{ opacity: 0, translateY: 200 }}
@@ -171,7 +171,7 @@ const Blogs = () => {
               <input
                 ref={searchRef}
                 placeholder="Search post"
-                className="w-full  bg-transparent p-3 placeholder:text-gray-900"
+                className="w-full dark:bg-slate-800 dark:placeholder:text-white dark:text-white bg-transparent p-3 placeholder:text-gray-900"
               />
               <button className="px-5 py-3 bg-gray-900 text-white font-medium">
                 Search
@@ -183,7 +183,7 @@ const Blogs = () => {
               {FollowUs &&
                 FollowUs.map((li, index) => (
                   <Link className="flex py-2" key={li?.name} to={li?.path}>
-                    <button className="border flex items-center justify-start gap-5 text-gray-900 px-5 py-3 hover:bg-gray-900 hover:text-white transition-all w-full border-gray-900 rounded-md">
+                    <button className="border flex items-center dark:bg-slate-800 dark:text-white justify-start gap-5 text-gray-900 px-5 py-3 hover:bg-gray-900 hover:text-white transition-all w-full border-gray-900 rounded-md">
                       <span className="text-xl">{li?.icon}</span>
                       {li?.name}
                     </button>

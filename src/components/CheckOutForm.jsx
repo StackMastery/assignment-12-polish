@@ -136,7 +136,7 @@ const CheckOutForm = ({ setisOpenFund, refetch }) => {
   return (
     <form
       data-aos="fade-up"
-      className="bg-white h-fit p-8 w-full md:w-9/12 xl:w-5/12 space-y-4 rounded-xl border"
+      className="bg-white dark:bg-slate-800/50 backdrop-blur-xl dark:border-white/10 h-fit p-8 w-full md:w-9/12 xl:w-5/12 space-y-4 rounded-xl border"
       onSubmit={handleSubmit}
     >
       <div className="w-full flex justify-end -mt-14">
@@ -149,7 +149,7 @@ const CheckOutForm = ({ setisOpenFund, refetch }) => {
         </button>
       </div>
       <div>
-        <label className="block mb-1 font-semibold text-neutral-800 text-sm">
+        <label className="block mb-1 font-medium text-sm dark:text-white text-neutral-800">
           Amount (BDT) *
         </label>
         <span className="w-10 h-[1px] bg-red-600/40 flex mb-[10px] rounded-full"></span>
@@ -161,13 +161,14 @@ const CheckOutForm = ({ setisOpenFund, refetch }) => {
         />
       </div>
       <div>
-        <label className="block mb-1 font-semibold text-neutral-800 text-sm">
+        <label className="block mb-1 font-medium text-sm dark:text-white text-neutral-800">
           Enter card information *
         </label>
         <span className="w-10 h-[1px] bg-red-600/40 flex mb-[10px] rounded-full"></span>
         <div className="w-full border rounded-lg h-fit p-3">
           <CardElement
             disabled={isFunding}
+            className="dark:!text-white"
             options={{
               style: {
                 base: {
@@ -179,7 +180,8 @@ const CheckOutForm = ({ setisOpenFund, refetch }) => {
         </div>
       </div>
       <div>
-        <label className="block mb-1 font-semibold text-neutral-800 text-sm">
+        {" "}
+        <label className="block mb-1 font-medium text-sm dark:text-white text-neutral-800">
           Add a note
         </label>
         <span className="w-10 h-[1px] bg-red-600/40 flex mb-[10px] rounded-full"></span>
@@ -187,7 +189,7 @@ const CheckOutForm = ({ setisOpenFund, refetch }) => {
           disabled={isFunding}
           value={note}
           onChange={(e) => setNote(e.target.value)}
-          className="p-2 border w-full rounded-lg text-sm placeholder:text-sm"
+          className="p-2 border w-full rounded-lg dark:bg-slate-900 text-sm placeholder:text-sm"
           rows={3}
           placeholder="Add a note"
         />

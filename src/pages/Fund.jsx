@@ -112,7 +112,7 @@ const Fund = () => {
         </div>
       </section>
       <section className="px-5 flex justify-center">
-        <div className="max-w-[1040px] w-full flex flex-col p-5 rounded-2xl bg-white shadow overflow-x-auto">
+        <div className="max-w-[1040px] w-full flex flex-col p-5 rounded-2xl dark:bg-slate-800/50 dark:border-white/10 bg-white shadow overflow-x-auto">
           <div className="w-full font-medium flex justify-between border-b border-gray-900/50 gap-5 pb-5">
             <button
               onClick={handleRecaptchaVerify}
