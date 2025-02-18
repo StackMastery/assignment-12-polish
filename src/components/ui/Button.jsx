@@ -5,7 +5,7 @@ const Button = ({ variant, children, className, ...props }) => {
     return (
       <button
         {...props}
-        className={`${commonClassBtn} hover:bg-black dark:hover:bg-white dark:hover:border-white dark:hover:text-color-1 hover:text-white transition-all ${className}`}
+        className={`${commonClassBtn} hover:bg-black dark:hover:bg-white dark:hover:border-white dark:border-white/10 dark:hover:text-color-1 hover:text-white transition-all ${className}`}
       >
         {children}
       </button>

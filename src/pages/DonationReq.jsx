@@ -110,7 +110,7 @@ const DonationReq = () => {
             Give the Gift of Life <LineBrack /> Donate{" "}
             <strong className="text-red-500">Blood</strong> Today
           </h2>
-          <div className="w-full blur-2xl h-60 absolute bg-white/50 xl:w-5/12 z-10"></div>
+          <div className="w-full blur-2xl h-60 absolute dark:bg-slate-900 bg-white/50 xl:w-5/12 z-10"></div>
           <p data-aos="fade-up" className="z-20">
             Every donation counts! Join us to save lives by donating blood. Your
             single donation can help
@@ -136,7 +136,7 @@ const DonationReq = () => {
           </Select>
           <button
             onClick={ExportToPDF}
-            className="flex bg-red-500 text-white rounded-lg font-medium px-5 border items-center gap-2"
+            className="flex bg-red-500 dark:border-red-500 text-white rounded-lg font-medium px-5 border items-center gap-2"
           >
             <PiPrinterThin />
             Print
@@ -150,9 +150,9 @@ const DonationReq = () => {
             allDonationReq?.donations?.map((donation) => (
               <div
                 key={donation._id}
-                className="flex text-sm border-dashed border p-5 col-span-1 flex-col gap-3 border-red-900/30 rounded-lg"
+                className="flex text-sm border-dashed border p-5 col-span-1 flex-col gap-3 dark:border-solid dark:border-white/10 border-red-900/30 rounded-lg"
               >
-                <h3 className="text-[17px] font-semibold text-gray-900">
+                <h3 className="text-[17px] font-semibold text-gray-900 dark:text-white">
                   {donation?.recName}
                 </h3>
                 <span className="!bg-gray-900/10 h-[1px] w-full flex" />
@@ -173,7 +173,7 @@ const DonationReq = () => {
                   {moment(donation?.donationTime, "HH:mm").format("hh:mm A")}
                 </li>
                 <Link to={`/donation/${donation?._id}`} className="flex">
-                  <button className="w-full border border-dashed text-gray-900 border-gray-900/50 rounded-lg font-semibold text-sm py-[5px]">
+                  <button className="w-full dark:bg-white/10 dark:text-white dark:border-white/20 border border-dashed text-gray-900 border-gray-900/50 rounded-lg font-semibold text-sm py-[5px]">
                     View Details
                   </button>
                 </Link>

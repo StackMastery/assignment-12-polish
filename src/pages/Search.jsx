@@ -98,7 +98,7 @@ const Search = () => {
         <title>Search blood donors | Red. Bank</title>
       </Helmet>
       <section className="flex justify-center px-5 mt-40 items-center">
-        <div className=" max-w-[1240px] w-full items-center overflow-hidden flex flex-col bg-red-50 rounded-2xl border border-red-500/30 bg-contain bg-center bg-no-repeat ">
+        <div className=" max-w-[1240px] w-full items-center overflow-hidden flex flex-col dark:bg-slate-900 bg-red-50 rounded-2xl border border-red-500/30 bg-contain bg-center bg-no-repeat ">
           <div className="flex w-full justify-between z-10">
             <div className="w-6/12">
               <motion.img
@@ -138,7 +138,7 @@ const Search = () => {
             </div>
           </div>
           <div className="w-full -mt-[200px] pb-20 flex justify-center px-5 z-50 relative">
-            <div className="absolute blur-lg bg-white/20 w-full h-40"></div>
+            <div className="absolute blur-lg dark:bg-slate-900/20 bg-white/20 w-full h-40"></div>
             <div className="text-center space-y-3">
               <h2 className="text-4xl font-2 font-semibold">
                 Search for donors
@@ -154,7 +154,7 @@ const Search = () => {
       </section>
       <section className="justify-center flex pb-20">
         <div className="flex w-full max-w-[1240px] flex-col items-center">
-          <div className="flex w-9/12 gap-5 border p-5 pb-0 rounded-2xl -mt-10 z-50 bg-white ">
+          <div className="flex w-9/12 gap-5 border p-5 pb-0 rounded-2xl -mt-10 z-50 dark:bg-slate-900/50 dark:border-white/10 bg-white ">
             <div className="flex w-full flex-wrap pb-5 xl:pb-0 xl:flex-nowrap gap-5">
               <SelectDistrictAndUpazila
                 defaultDistrict={district || null}
