@@ -3,7 +3,9 @@ const AuthTitleDes = ({ heading, children }) => {
     <>
       <div className="w-full space-y-3">
         <h2 className="text-2xl font-semibold">{heading}</h2>
-        <p className="text-[12.7px] text-neutral-600">{children}</p>
+        <p className="text-[12.7px] dark:text-white/70 text-neutral-600">
+          {children}
+        </p>
       </div>
     </>
   );

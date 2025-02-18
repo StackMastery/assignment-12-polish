@@ -236,7 +236,7 @@ const Register = () => {
           <div className="flex justify-between gap-5 flex-wrap md:flex-nowrap">
             <div className="w-full">
               <div>
-                <label className="block mb-1 font-semibold text-neutral-800">
+                <label className="block mb-1 font-semibold dark:text-white text-neutral-800">
                   Select Blood group
                 </label>
                 <span className="w-10 h-[1px] bg-red-600/40 flex mb-[10px] rounded-full"></span>
@@ -265,7 +265,7 @@ const Register = () => {
             </div>
             <div className="w-full">
               <div>
-                <label className="block mb-1 font-semibold text-neutral-800">
+                <label className="block mb-1 font-semibold dark:text-white text-neutral-800">
                   Upload your avatar
                 </label>
                 <span className="w-10 h-[1px] bg-red-600/40 flex mb-[10px] rounded-full"></span>
@@ -279,7 +279,7 @@ const Register = () => {
                 className="hidden"
               />
               <label htmlFor="avatarU">
-                <div className="w-full border rounded-xl p-3 cursor-pointer flex gap-4">
+                <div className="w-full border dark:border-white/10 rounded-xl p-3 cursor-pointer flex gap-4">
                   {avatar === "uploding" ? (
                     <PiSpinnerGapLight
                       color="red"

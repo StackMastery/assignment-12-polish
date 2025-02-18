@@ -1,5 +1,4 @@
 import { Link, Outlet, ScrollRestoration } from "react-router-dom";
-import Authbackground from "@/assets/authbg.svg";
 import Logo from "@/components/ui/Logo";
 import Button from "@/components/ui/Button";
 
@@ -7,7 +6,7 @@ const AuthLayout = () => {
   return (
     <>
       <header className="flex justify-center p-5 py-10">
-        <div className="w-[800px] inline-flex justify-between items-center border  dark:bg-slate-800/20 dark:border-white/10 dark:text-white backdrop-blur-xl bg-white p-5 py-3 rounded-2xl">
+        <div className="w-[800px] inline-flex justify-between items-center border dark:bg-slate-800/20 dark:border-white/10 dark:text-white backdrop-blur-xl bg-white p-5 py-3 rounded-2xl">
           <Logo width="50px" />
           <Link to={-1}>
             <Button>Go Back</Button>
