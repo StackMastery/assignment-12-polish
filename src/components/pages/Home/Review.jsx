@@ -20,7 +20,7 @@ const Review = () => {
             {reviews.map((review, index) => (
               <div
                 key={`right-${index}`}
-                className="w-[300px] cursor-pointer hover:bg-black/5 transition-all border p-5 rounded-xl border-red-500/10 bg-white"
+                className="w-[300px] cursor-pointer dark:bg-transparent dark:border-white/10 hover:bg-black/5 transition-all border p-5 rounded-xl border-red-500/10 bg-white"
               >
                 <div className="flex items-center gap-2">
                   <img
@@ -46,7 +46,7 @@ const Review = () => {
             {reviews.map((review, index) => (
               <figure
                 key={`left-${index}`}
-                className="w-[300px] h-fit border p-5 rounded-xl border-red-500/10 bg-white"
+                className="w-[300px] h-fit border p-5 dark:bg-transparent dark:border-white/10 rounded-xl border-red-500/10 bg-white"
               >
                 <div className="flex items-center gap-2">
                   <img
@@ -68,8 +68,8 @@ const Review = () => {
             ))}
           </Marquee>
 
-          <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-[#f9f1ef] dark:from-background"></div>
-          <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-[#f9f1ef] dark:from-background"></div>
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 dark:from-slate-900 bg-gradient-to-r from-[#f9f1ef] dark:from-background"></div>
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l dark:from-slate-900 from-[#f9f1ef] dark:from-background"></div>
         </div>
       </section>
     </>

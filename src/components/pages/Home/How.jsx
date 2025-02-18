@@ -24,10 +24,10 @@ const How = () => {
                 data-aos-delay={index * 200}
                 data-aos-anchor-placement="bottom-bottom"
                 key={index}
-                className="p-5 bg-white w-full transition-all col-span-1 hover:border-red-400 cursor-pointer border rounded-xl space-y-5"
+                className="p-5 dark:bg-slate-800/50 dark:border-white/10 bg-white w-full transition-all col-span-1 hover:border-red-400 cursor-pointer border rounded-xl space-y-5"
               >
                 <div className="flex gap-3 items-center">
-                  <span className="p-2 border text-xl text-red-500 bg-red-50 rounded-md">
+                  <span className="p-2 border text-xl dark:bg-white/10 dark:border-slate-800 text-red-500 bg-red-50 rounded-md">
                     {card?.icon}
                   </span>
                 </div>

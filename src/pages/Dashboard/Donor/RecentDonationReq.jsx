@@ -135,7 +135,7 @@ const RecentDonationReq = () => {
           className="flex gap-5 justify-between w-full flex-wrap"
         >
           <Link className="w-full flex" to={`./create-donation-request`}>
-            <div className="p-5 flex gap-5 items-center border-red-200 bg-red-100 rounded-xl py-3 border w-full">
+            <div className="p-5 flex dark:bg-slate-800/50 dark:border-white/10 gap-5 items-center border-red-200 bg-red-100 rounded-xl py-3 border w-full">
               <GoPlus size={70} className="text-red-500" />
               <div>
                 <h2 className="text-2xl font-semibold">
@@ -146,7 +146,7 @@ const RecentDonationReq = () => {
             </div>
           </Link>
           <Link className="w-full flex" to={`./profile`}>
-            <div className="p-5 flex gap-5 items-center border-red-200 bg-red-100 rounded-xl py-3 border w-full">
+            <div className="p-5 flex gap-5 dark:bg-slate-800/50 dark:border-white/10 items-center border-red-200 bg-red-100 rounded-xl py-3 border w-full">
               <CiUser size={55} className="text-red-500" />
               <div>
                 <h2 className="text-2xl font-semibold">Manage your profile</h2>
@@ -156,7 +156,7 @@ const RecentDonationReq = () => {
           </Link>
           <button
             onClick={Logout}
-            className="p-5 flex gap-5 items-center border-red-200 bg-red-100 rounded-xl py-3 border w-full"
+            className="p-5 flex gap-5 dark:bg-slate-800/50 dark:border-white/10 items-center border-red-200 bg-red-100 rounded-xl py-3 border w-full"
           >
             <CiLogout size={55} className="text-red-500" />
             <div className="text-start">
