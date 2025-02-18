@@ -201,11 +201,11 @@ const AddBlog = () => {
         animate={{ translateY: 0, opacity: 1 }}
         className="rounded-xl w-full justify-center flex flex-col xl:flex-row gap-10"
       >
-        <div className="bg-white w-full rounded-lg p-5 space-y-5">
+        <div className="bg-white dark:bg-slate-800/50 dark:border-white/10 w-full rounded-lg p-5 space-y-5">
           <div>
             <div className="flex justify-between w-full">
-              <label className="block mb-1 font-semibold text-neutral-800">
-                Title *
+              <label className=" mb-1 font-semibold dark:text-white text-neutral-800 flex justify-between">
+                Publish Title *
               </label>
               <p>({postTitle?.length}/120)</p>
             </div>
@@ -243,8 +243,8 @@ const AddBlog = () => {
           </div>
           <div>
             <div className="flex justify-between w-full">
-              <label className="block mb-1 font-semibold text-neutral-800">
-                Description
+              <label className=" mb-1 font-semibold dark:text-white text-neutral-800 flex justify-between">
+                Publish Description
               </label>
               <p>({postDes?.length}/400)</p>
             </div>
@@ -255,13 +255,13 @@ const AddBlog = () => {
               {...formFields("postDes")}
               onInput={handleDescriptionInput}
               placeholder="Short description"
-              className="p-2 text-sm border focus:border-red-400/50 focus:ring-4 transition-all ring-red-100 w-full rounded-md"
+              className="border w-full px-5 py-2 dark:bg-slate-900 dark:placeholder:text-white/70 dark:border-white/10 rounded-md ring-offset-1 focus:ring-1 ring-red-700/60 transition-all focus:!border-transparent text-sm placeholder:text-color-1/80 placeholder:font-medium"
             ></textarea>
             {errors.postDes && <LineError error={errors.postDes.message} />}
           </div>
           <div>
-            <label className="block mb-1 font-semibold text-neutral-800">
-              Content
+            <label className=" mb-1 font-semibold dark:text-white text-neutral-800 flex justify-between">
+              Publish Content
             </label>
             <span className="w-10 h-[1px] bg-red-600/40 flex mb-[10px] rounded-full"></span>
             <JoditEditor
@@ -276,9 +276,9 @@ const AddBlog = () => {
           </div>
         </div>
         <div className="xl:w-[400px] space-y-5 w-full flex flex-col">
-          <div className="p-5 rounded-lg bg-white order-last xl:order-first">
-            <label className="block mb-1 font-semibold text-neutral-800">
-              Publish
+          <div className="p-5 rounded-lg dark:bg-slate-800/50 dark:border-white/10 bg-white order-last xl:order-first">
+            <label className=" mb-1 font-semibold dark:text-white text-neutral-800 flex justify-between">
+              Publish Publish
             </label>
             <span className="w-10 h-[1px] bg-red-600/40 flex mb-[10px] rounded-full"></span>
             <button
@@ -292,19 +292,19 @@ const AddBlog = () => {
               )}
             </button>
           </div>
-          <div className="p-5 rounded-lg bg-white">
-            <label className="block mb-1 font-semibold text-neutral-800">
-              Time to read (minute)
+          <div className="p-5 dark:bg-slate-800/50 dark:border-white/10 rounded-lg bg-white">
+            <label className=" mb-1 font-semibold dark:text-white text-neutral-800 flex justify-between">
+              Publish Time to read (minute)
             </label>
             <span className="w-10 h-[1px] bg-red-600/40 flex mb-[10px] rounded-full"></span>
-            <div className="px-3 py-2 border text-sm rounded-md bg-slate-100">
+            <div className="px-3 py-2 border text-sm dark:bg-slate-800/50 dark:border-white/10 rounded-md bg-slate-100">
               {readTimeAvg || 0}
             </div>
           </div>
           {authData?.role === "admin" && (
-            <div className="p-5 rounded-lg bg-white">
-              <label className="block mb-1 font-semibold text-neutral-800">
-                Status
+            <div className="p-5 dark:bg-slate-800/50 dark:border-white/10 rounded-lg bg-white">
+              <label className="block mb-1 font-semibold dark:text-white text-neutral-800">
+                Publish Status
               </label>
               <span className="w-10 h-[1px] bg-red-600/40 flex mb-[10px] rounded-full"></span>
               <Select
@@ -321,9 +321,9 @@ const AddBlog = () => {
               </Select>
             </div>
           )}
-          <div className="p-5 rounded-lg bg-white">
-            <label className="block mb-1 font-semibold text-neutral-800">
-              Image *
+          <div className="p-5 rounded-lg dark:bg-slate-800/50 dark:border-white/10 bg-white">
+            <label className="block mb-1 font-semibold dark:text-white text-neutral-800">
+              Publish Image *
             </label>
             <span className="w-10 h-[1px] bg-red-600/40 flex mb-[10px] rounded-full"></span>
             <input
