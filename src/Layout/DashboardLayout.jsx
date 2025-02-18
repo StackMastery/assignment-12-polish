@@ -63,7 +63,7 @@ const SideBar = ({ className, ...props }) => {
   return (
     <>
       <div
-        className={`w-[400px] hidden xl:block px-5 py-5 pr-10 border bg-white ${className}`}
+        className={`w-[400px] hidden xl:block px-5 py-5 pr-10 border dark:bg-slate-900 dark:border-white/10 bg-white ${className}`}
         {...props}
       >
         <div className="flex w-full justify-between">
@@ -90,7 +90,7 @@ const SideBar = ({ className, ...props }) => {
                 to={link.path}
                 end
                 className={({ isActive }) =>
-                  `px-5 text-sm w-full py-[10px] overflow-hidden flex items-center gap-3 border rounded-lg font-medium ${
+                  `px-5 text-sm w-full py-[10px] dark:border-white/10 overflow-hidden flex items-center gap-3 border rounded-lg font-medium ${
                     isActive ? "bg-red-500 text-white" : ""
                   }`
                 }
@@ -112,7 +112,7 @@ const SideBar = ({ className, ...props }) => {
                     to={link.path}
                     end
                     className={({ isActive }) =>
-                      `px-5 w-full py-[10px] flex items-center gap-3 border rounded-lg font-medium ${
+                      `px-5 w-full py-[10px] flex dark:border-white/10 items-center gap-3 border rounded-lg font-medium ${
                         isActive ? "bg-red-500 text-white" : ""
                       }`
                     }
@@ -136,7 +136,7 @@ const SideBar = ({ className, ...props }) => {
                     to={link.path}
                     end
                     className={({ isActive }) =>
-                      `px-5 w-full py-[10px] flex items-center gap-3 border rounded-lg font-medium ${
+                      `px-5 w-full dark:border-white/10 py-[10px] flex items-center gap-3 border rounded-lg font-medium ${
                         isActive ? "bg-red-500 text-white" : ""
                       }`
                     }
@@ -150,7 +150,7 @@ const SideBar = ({ className, ...props }) => {
           )}
           <button
             onClick={Logout}
-            className="px-5 w-full py-[10px] flex items-center gap-3 border rounded-lg font-medium"
+            className="px-5 dark:border-white/10 w-full py-[10px] flex items-center gap-3 border rounded-lg font-medium"
           >
             <span className="text-2xl">
               <CiLogout />
@@ -193,7 +193,7 @@ const DashboardHeader = () => {
 
   return (
     <>
-      <div className="bg-white p-5 rounded-lg flex justify-between items-center gap-5">
+      <div className="bg-white dark:bg-slate-800/20 dark:border-white/10 border p-5 rounded-lg flex justify-between items-center gap-5">
         <div className="flex items-center gap-5">
           <Link to={"/"}>
             <div className="loading md:hidden">
@@ -250,7 +250,9 @@ const DashboardHeader = () => {
       </div>
       {isSideBarOpen && (
         <div className="absolute w-full left-0 p-5 z-50 mt-20 xl:hidden">
-          <div className={`w-full px-5 py-5 pr-10 border bg-white rounded-xl`}>
+          <div
+            className={`w-full px-5 py-5 pr-10 border dark:bg-slate-900/60 dark:border-white/10 backdrop-blur-xl bg-white rounded-xl`}
+          >
             <ul className="space-y-5">
               {SidebarLinks &&
                 SidebarLinks.map((link, index) => (
@@ -258,7 +260,7 @@ const DashboardHeader = () => {
                     to={link.path}
                     end
                     className={({ isActive }) =>
-                      `px-5 w-full py-[10px] flex items-center gap-3 border rounded-lg font-medium ${
+                      `px-5 w-full py-[10px] dark:border-white/10 flex items-center gap-3 border rounded-lg font-medium ${
                         isActive ? "bg-red-500 text-white" : ""
                       }`
                     }
@@ -275,7 +277,7 @@ const DashboardHeader = () => {
                     to={link.path}
                     end
                     className={({ isActive }) =>
-                      `px-5 w-full py-[10px] flex items-center gap-3 border rounded-lg font-medium ${
+                      `px-5 w-full py-[10px] dark:border-white/10 flex items-center gap-3 border rounded-lg font-medium ${
                         isActive ? "bg-red-500 text-white" : ""
                       }`
                     }
@@ -304,7 +306,7 @@ const DashboardHeader = () => {
                 ))}
               <button
                 onClick={Logout}
-                className="px-5 w-full py-[10px] flex items-center gap-3 border rounded-lg font-medium"
+                className="px-5 dark:border-white/10 w-full py-[10px] flex items-center gap-3 border rounded-lg font-medium"
               >
                 <span className="text-2xl">
                   <CiLogout />

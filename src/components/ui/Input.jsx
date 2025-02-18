@@ -6,14 +6,14 @@ const Input = forwardRef(
       <div className="w-full">
         {label && (
           <>
-            <label className="block mb-1 font-semibold text-neutral-800">
+            <label className="block mb-1 font-semibold dark:text-white text-neutral-800">
               {label}
             </label>
             <span className="w-10 h-[1px] bg-red-600/40 flex mb-[10px] rounded-full"></span>
           </>
         )}
         <input
-          className={`border w-full px-5 py-2 rounded-md ring-offset-1 focus:ring-1 ring-red-700/60 transition-all focus:border-transparent text-sm placeholder:text-color-1/80 placeholder:font-medium ${className}`}
+          className={`border w-full px-5 py-2 dark:bg-slate-900 dark:placeholder:text-white/70 dark:border-white/10 rounded-md ring-offset-1 focus:ring-1 ring-red-700/60 transition-all focus:!border-transparent text-sm placeholder:text-color-1/80 placeholder:font-medium ${className}`}
           {...props}
           ref={ref}
         />

@@ -74,11 +74,11 @@ const Blog = () => {
                 {post?.shortDescription?.length > 0 && (
                   <p>{post?.shortDescription?.slice(0, 120)}</p>
                 )}
-                <p className="px-2 py-1 bg-white/50 border w-fit rounded-md">
+                <p className="py-1 bg-white/50 dark:bg-slate-800/80 dark:border-white/10 text-sm px-3 border w-fit rounded-md">
                   {moment(post?.createdAt).fromNow()}
                 </p>
                 <Link
-                  className="text-black flex underline"
+                  className="text-black dark:text-white flex underline"
                   to={`./blogs/${post.permaLink}`}
                 >
                   See More
@@ -111,7 +111,7 @@ const Blog = () => {
       </section>
       <div className="flex justify-center py-20 pt-10 px-5">
         <Link data-aos="fade-up" to={"../blogs"}>
-          <button className="bg-black text-white font-semibold px-5 py-3 rounded-xl">
+          <button className="bg-black dark:bg-white/10 border border-black dark:border-white/20 text-white font-semibold px-5 py-3 rounded-xl">
             Browse more
           </button>
         </Link>

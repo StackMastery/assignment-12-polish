@@ -47,7 +47,9 @@ const AdminRoot = () => {
           className={`p-5 rounded-xl !bg-pink-500/10 border-pink-500/20 hover:!border-l-pink-500 text-pink-500 transition-all  border-l-8 md:px-10 flex justify-between items-center  border w-full`}
         >
           <div className="space-y-5">
-            <h3 className={`font-semibold !text-color-1`}>Total funds</h3>
+            <h3 className={`font-semibold dark:!text-white !text-color-1`}>
+              Total funds
+            </h3>
             <h2 className="text-5xl flex items-center font-bold">
               {numeral(counts?.totalFundingAmmount).format("0.0a")}
               <span className="flex text-3xl -translate-y-3 font-thin">$</span>
@@ -61,7 +63,7 @@ const AdminRoot = () => {
             </h2>
           </div>
           <div
-            className={`text-4xl ring-8 ring-white/40 text-pink-600 bg-white p-3 rounded-xl`}
+            className={`text-4xl dark:bg-slate-800/50 dark:ring-white/10 ring-8 ring-white/40 text-pink-600 bg-white p-3 rounded-xl`}
           >
             <FaHeart />
           </div>
@@ -99,7 +101,11 @@ const CounterCards = ({
         className={`p-5 rounded-xl hover:border-l-orange-500 transition-all bg-orange-500/10 border-l-8 md:px-10 flex justify-between items-center border-orange-500/20 border w-full ${className} ${colorClassName}`}
       >
         <div className="space-y-5">
-          <h3 className={`font-semibold !text-color-1`}>{title}</h3>
+          <h3
+            className={`font-semibold dark:!text-white !text-color-1 !text-color-1`}
+          >
+            {title}
+          </h3>
           <h2 className="text-5xl flex items-center font-bold">
             {count ? (
               <NumberTicker
@@ -115,7 +121,7 @@ const CounterCards = ({
           </h2>
         </div>
         <div
-          className={`text-4xl ring-8 ring-white/40 text-orange-600 bg-white p-3 rounded-xl ${colorClassName}`}
+          className={`text-4xl ring-8  ring-white/40 text-orange-600 dark:bg-slate-800/50 dark:ring-white/10 bg-white p-3 rounded-xl ${colorClassName}`}
         >
           {children}
         </div>

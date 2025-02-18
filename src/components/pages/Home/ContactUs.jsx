@@ -29,11 +29,11 @@ const ContactUs = () => {
               <div
                 data-aos="fade-up"
                 data-aos-delay={1 * 200}
-                className="border bg-white rounded-xl p-5 flex-col flex md:flex-row gap-5"
+                className="border bg-white dark:bg-slate-900 dark:border-white/20 rounded-xl p-5 flex-col flex md:flex-row gap-5"
               >
                 <PiPhoneCallLight
                   size={50}
-                  className="bg-primary-1 p-2 rounded-xl text-red-500"
+                  className="bg-primary-1 dark:bg-white/5 p-2 rounded-xl text-red-500"
                 />
                 <div>
                   <h2 className="text-xl font-semibold">Talk with us</h2>
@@ -51,11 +51,11 @@ const ContactUs = () => {
               <div
                 data-aos="fade-up"
                 data-aos-delay={2 * 200}
-                className="border bg-white rounded-xl p-5 flex-col flex md:flex-row gap-5"
+                className="border bg-white dark:bg-slate-900 dark:border-white/20 rounded-xl p-5 flex-col flex md:flex-row gap-5"
               >
                 <HiOutlineEnvelope
                   size={50}
-                  className="bg-primary-1 p-2 rounded-xl text-red-500"
+                  className="bg-primary-1 dark:bg-white/5 p-2 rounded-xl text-red-500"
                 />
                 <div>
                   <h2 className="text-xl font-semibold">Send us and email</h2>
@@ -75,7 +75,7 @@ const ContactUs = () => {
               <form
                 data-aos="fade-left"
                 data-aos-delay={1 * 200}
-                className="p-10 space-y-5 border w-full rounded-xl bg-white"
+                className="p-10 space-y-5 border w-full dark:bg-slate-900 dark:border-white/10 rounded-xl bg-white"
               >
                 <div className="flex flex-wrap sm:flex-nowrap justify-between w-full gap-5">
                   <Input label="Name" placeholder="Junaid Islam" />
@@ -96,7 +96,7 @@ const ContactUs = () => {
                 <div className="flex flex-wrap sm:flex-nowrap justify-between w-full gap-5">
                   <textarea
                     rows={4}
-                    className="border w-full p-5 rounded-xl max-h-[150px]"
+                    className="border w-full px-5 py-2 dark:bg-slate-900 dark:placeholder:text-white/70 dark:border-white/10 rounded-md ring-offset-1 focus:ring-1 ring-red-700/60 transition-all focus:!border-transparent text-sm placeholder:text-color-1/80 placeholder:font-medium max-h-[150px]"
                     placeholder="Leave us a message"
                   />
                 </div>
