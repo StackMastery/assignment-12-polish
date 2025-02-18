@@ -162,4 +162,13 @@ input[type="number"] {
   .css-jp1865-placeholder {
     color: #ffffff !important;
   }
+  * {
+    border-color: rgb(255 255 255 / 0.1);
+  }
+}
+
+.no-hover {
+  background-color: initial;
+  color: initial;
+  border: initial;
 }

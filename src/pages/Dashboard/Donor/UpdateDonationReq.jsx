@@ -189,7 +189,7 @@ const UpdateDonationReq = () => {
         className={`w-full flex justify-between gap-5 flex-col xl:flex-row`}
       >
         <div
-          className={`flex bg-white p-10 w-full gap-5 rounded-xl flex-col ${
+          className={`flex dark:border dark:bg-slate-800/50 dark:border-white/10 bg-white p-10 w-full gap-5 rounded-xl flex-col ${
             (isUpdating || isFetching) && "blur-md"
           }`}
         >
@@ -265,7 +265,7 @@ const UpdateDonationReq = () => {
               label="Donation time"
             />
             <div className="w-full">
-              <label className="block mb-1 font-semibold text-neutral-800">
+              <label className="block mb-1 font-semibold dark:text-white text-neutral-800">
                 Select blood groupe
               </label>
               <span className="w-10 h-[1px] bg-red-600/40 flex mb-[10px] rounded-full"></span>
@@ -285,7 +285,7 @@ const UpdateDonationReq = () => {
             )}
           </div>
           <div className="w-full">
-            <label className="block mb-1 font-semibold text-neutral-800">
+            <label className="block mb-1 font-semibold dark:text-white text-neutral-800">
               Request message
             </label>
             <span className="w-10 h-[1px] bg-red-600/40 flex mb-[10px] rounded-full"></span>
@@ -295,15 +295,15 @@ const UpdateDonationReq = () => {
               {...formField("donationMsg", {
                 required: "Please give a fulladdress",
               })}
-              className="border w-full px-5 py-2 rounded-lg ring-offset-1 focus:ring-1 ring-red-700/60 transition-all focus:border-transparent text-sm placeholder:text-color-1/80 placeholder:font-medium"
+              className="border w-full px-5 py-2 dark:bg-slate-900 dark:placeholder:text-white/70 dark:border-white/10 rounded-md ring-offset-1 focus:ring-1 ring-red-700/60 transition-all focus:!border-transparent text-sm placeholder:text-color-1/80 placeholder:font-medium"
               type="text"
               placeholder="Type message"
               label="Request message"
             />
           </div>
         </div>
-        <div className="xl:w-[300px] bg-white p-6 rounded-xl h-fit">
-          <label className="mb-1 font-semibold flex w-full justify-between text-neutral-800">
+        <div className="xl:w-[300px] dark:border dark:bg-slate-800/50 dark:border-white/10 bg-white p-6 rounded-xl h-fit">
+          <label className="mb-1 font-semibold dark:text-white text-neutral-800 flex gap-5 w-full justify-between">
             Update
             <Link
               to={`/donation/${donationData?._id}`}

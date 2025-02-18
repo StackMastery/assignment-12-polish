@@ -195,7 +195,7 @@ const AllDonationsReq = () => {
       <motion.div
         initial={{ translateY: 200, opacity: 0 }}
         animate={{ translateY: 0, opacity: 1 }}
-        className="bg-white p-5 rounded-xl"
+        className="bg-white dark:bg-slate-800/50 dark:border-white/10 p-5 rounded-xl"
       >
         <div className="flex justify-between border-b items-end flex-wrap md:flex-nowrap">
           <div>

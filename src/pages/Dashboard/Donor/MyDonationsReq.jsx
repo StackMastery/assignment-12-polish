@@ -190,13 +190,13 @@ const MyDonationsReq = () => {
       <motion.div
         initial={{ opacity: 0, translateY: 200 }}
         animate={{ opacity: 1, translateY: 0 }}
-        className="bg-white p-5 rounded-md"
+        className="bg-white dark:border dark:bg-slate-800/50 dark:border-white/10 p-5 rounded-md"
       >
         <div className="flex justify-between border-b items-end flex-wrap xl:flex-nowrap">
           <div>
             <button
               onClick={() => setfilterBarIsOpen(!filterBarIsOpen)}
-              className="rounded-b-none flex items-center gap-3 border-b-0 rounded-t-lg border px-5 py-2"
+              className="rounded-b-none flex dark:border-white/10 items-center gap-3 border-b-0 rounded-t-lg border px-5 py-2"
             >
               {`Filtered By ${filter} Status`}
               <SlArrowDown
@@ -248,7 +248,7 @@ const MyDonationsReq = () => {
           </div>
           <button
             onClick={ExportToPDF}
-            className="rounded-b-none  w-full md:w-fit bg-red-500 text-white hover:bg-red-700 h-fit flex items-center gap-3 border-b-0 rounded-t-lg border px-5 py-2"
+            className="rounded-b-none dark:border-red-500 w-full md:w-fit bg-red-500 text-white hover:bg-red-700 h-fit flex items-center gap-3 border-b-0 rounded-t-lg border px-5 py-2"
           >
             Export as PDF
           </button>

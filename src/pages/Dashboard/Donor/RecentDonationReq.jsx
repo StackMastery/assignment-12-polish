@@ -183,7 +183,7 @@ const RecentDonationReq = () => {
       <h2 className="text-xl pt-5 font-medium">
         Recent blood donation requests
       </h2>
-      <div className="w-full bg-white rounded-xl pt-2">
+      <div className="w-full dark:border dark:bg-slate-800/50 dark:border-white/10 bg-white rounded-xl pt-2">
         <ScrollArea className="w-full overflow-x-scroll pb-3">
           <Table className="min-w-[1440px] xl:min-w-full">
             <TableHeader className="font-semibold">
@@ -326,7 +326,7 @@ const RecentDonationReq = () => {
           </Table>
           <div className="flex justify-center mt-2 w-full px-5">
             <Link to={`./my-donation-request`} className="flex w-full">
-              <button className="w-full bg-gray-900/20 font-semibold hover:bg-gray-300 transition-all rounded-md py-2 text-gray-950">
+              <button className="w-full no-hover dark:bg-white/10 dark:text-white dark:border-white/20 dark:border bg-gray-900/20 font-semibold hover:bg-gray-300 transition-all rounded-md py-2 text-gray-950">
                 View my all request
               </button>
             </Link>

@@ -201,7 +201,7 @@ const AllUser = () => {
       <motion.div
         initial={{ translateY: 200, opacity: 0 }}
         animate={{ translateY: 0, opacity: 1 }}
-        className="bg-white p-5 rounded-xl"
+        className="bg-white dark:border dark:bg-slate-800/50 dark:border-white/10 p-5 rounded-xl"
       >
         <div className="flex justify-between border-b items-end">
           <div className="flex items-center">
@@ -209,7 +209,7 @@ const AllUser = () => {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search user"
-              className="px-5 py-2 border rounded-xl rounded-b-none border-b-0"
+              className="px-5 py-2 border dark:border dark:bg-slate-800/50 dark:border-white/10 rounded-xl rounded-b-none border-b-0"
             />
             <button
               onClick={() => {

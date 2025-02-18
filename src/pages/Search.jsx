@@ -54,6 +54,7 @@ const Search = () => {
     queryKey: ["donorData"],
     queryFn: fetchData,
     enabled: isFetchOn,
+    refetchOnWindowFocus: false,
   });
 
   const handelNewFetchData = () => {
@@ -242,7 +243,7 @@ const Search = () => {
                           data-aos="fade-up"
                           data-aos-delay={index * 200}
                           key={index}
-                          className="bg-white space-y-5 col-span-1 w-full p-5 rounded-[16px]"
+                          className="bg-white dark:bg-slate-800/30 dark:border-white/10 space-y-5 col-span-1 w-full p-5 rounded-[16px]"
                         >
                           <div className="flex flex-wrap w-full gap-5 items-center">
                             <img
@@ -257,13 +258,13 @@ const Search = () => {
                               <p className="-mt-2">{donor?.email}</p>
                             </div>
                           </div>
-                          <hr />
+                          <span className="bg-stone-200 h-[1px] w-full flex dark:bg-white/10" />
                           <ol className="list-disc ml-10">
                             <li>Blood groupe - {donor?.bloodGroup}</li>
                             <li>District - {donor?.district}</li>
                             <li>Upazila - {donor?.upazila}</li>
                           </ol>
-                          <hr />
+                          <span className="bg-stone-200 h-[1px] w-full flex dark:bg-white/10" />
                           <Link
                             target="_blank"
                             to={`mailto:${donor?.email}`}

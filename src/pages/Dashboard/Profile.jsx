@@ -159,7 +159,7 @@ const Profile = () => {
       <motion.div
         initial={{ translateY: 200, opacity: 0 }}
         animate={{ translateY: 0, opacity: 1 }}
-        className="p-5 py-8 w-full rounded-xl bg-white"
+        className="p-5 py-8 w-full rounded-xl bg-white dark:border dark:bg-slate-800/50 dark:border-white/10"
       >
         {(isPorfileUpdating || isLoading) && (
           <>
@@ -304,7 +304,7 @@ const Profile = () => {
                   </div>
                 </div>
               </label>
-              <div className="w-full justify-between flex border-b border-dashed pb-5">
+              <div className="w-full justify-between flex border-b dark:border-white/10 border-dashed pb-5">
                 <h2 className="text-xl font-semibold">
                   {isEditing ? "Edit Porfile" : "My profile"}
                 </h2>

@@ -61,7 +61,7 @@ const Blog = () => {
                       alt="Image"
                       className="rounded-xl h-full w-full hover:scale-110 transition-all duration-500 object-cover"
                     />
-                    <div className="backdrop-blur bg-white ml-5 p-2 px-3 w-fit font-semibold rounded-md -mt-20 scale-90 text-xl font-2 border">
+                    <div className="backdrop-blur dark:text-black bg-white ml-5 p-2 px-3 w-fit font-semibold rounded-md -mt-20 scale-90 text-xl font-2 border">
                       {post?.timeToRead}
                       <br />
                       <span className="text-xs font-light -mt-1 flex">min</span>
