@@ -153,7 +153,7 @@ const ContentManageRoot = () => {
       <motion.div
         initial={{ opacity: 0, translateY: 200 }}
         animate={{ opacity: 1, translateY: 0 }}
-        className="bg-white p-5 rounded-md"
+        className="bg-white dark:bg-slate-800/50 dark:border-white/10 p-5 rounded-md"
       >
         <div className="flex w-full justify-between items-center flex-col sm:flex-row">
           <div className="flex w-full flex-col sm:flex-row sm:w-fit items-center gap-5">
@@ -162,7 +162,10 @@ const ContentManageRoot = () => {
               className="border-b-0 w-full rounded-b-none md:w-[300px]"
               placeholder="Search Blog"
             />
-            <CiSearch size={25} className="-ml-[30%] bg-white" />
+            <CiSearch
+              size={25}
+              className="-ml-[30%] dark:bg-transparent bg-white"
+            />
           </div>
           <div className="flex justify-between items-center w-full sm:w-fit">
             <Link to={`./add-blog`} className="w-full">
